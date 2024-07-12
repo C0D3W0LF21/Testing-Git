@@ -4,11 +4,14 @@ const button = document.querySelector("button")
 
 const arr = ["blue", "red", "yellow", "green", "purple", "orange"]
 
+import logDate from "./info.js"
+
 button.addEventListener('click', () => {
   const color = arr[Math.floor(Math.random() * arr.length)]
   
   document.body.style.backgroundColor = color
   button.style.color = color
+  logDate()
 })
 
 
